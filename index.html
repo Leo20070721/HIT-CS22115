@@ -1,0 +1,36 @@
+<!DOCTYPE html> <!-- 文件类型：html -->
+<html lang="en"> <!-- 语言：英文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 字符集：UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 视窗，宽度为设备宽度，初始缩放值 -->
+    <title>Test HTML</title> <!-- 网页标题 -->
+    <!-- js代码区-->
+    <script>
+        function submit(){
+            let getaccount = document.getElementById("Account").value;
+            let getpassword = document.getElementById("Password").value;
+            if(getaccount == "admin"){
+                if(getpassword == "root"){
+                    alert(`登陆成功！\n${getaccount}，欢迎回来！`);
+                }
+                else{
+                    alert(`密码错误！`);
+                }
+            }
+            else{
+                alert("账号不存在！");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Hello World!</h1> <!-- 一级标题 -->
+    <h3>Bitter forces may have wholesome results.</h3> <!-- 三级标题 -->
+    <hr> <!-- 分割线 -->
+    <img src="?" alt="神马情况"> <br> <!-- 图片 -->
+    留言板<br> <!-- 普通文本 -->
+    <input type="text" name="" id="Account" placeholder="请输入账号"> <br> <!-- 文本框 -->
+    <input type="text" name="" id="Password" placeholder="请输入密码"> <br>
+    <button onclick="submit()">提交</button> <!-- 按钮,onclick 按钮被点击时触发,submit() JS函数，位于head内 -->
+</body>
+</html>

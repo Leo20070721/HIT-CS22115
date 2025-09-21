@@ -24,4 +24,8 @@ console.log(a);
 console.log(b);
 */
 
-console.log(~4)
+//console.log(~4)
+
+let cname='Harbin Institute of Technology'
+cname.replace('o','p')
+console.log(cname.replace('o','p'));
